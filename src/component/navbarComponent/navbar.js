@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./navbar.css";
 
 export default function NavbarComponent() {
-  const [user, setUser] = useState(null); // State to track if the user is logged in
+  const [user, setUser] = useState(null); // State to track authentication status
   const navigate = useNavigate();
 
   useEffect(() => {
     const auth = getAuth();
-    // Set up a listener for authentication state changes
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
-        setUser(currentUser); // User is logged in
+        setUser(currentUser); // Set user if logged in
       } else {
-        setUser(null); // No user is logged in
+        setUser(null); // Clear user if logged out
       }
     });
 
-    // Cleanup the listener when the component is unmounted
     return () => unsubscribe();
   }, []);
 
@@ -25,91 +24,60 @@ export default function NavbarComponent() {
     const auth = getAuth();
     try {
       await signOut(auth);
-      navigate("/login"); // Redirect to the login page after logging out
+      navigate("/login"); // Redirect to login page after logout
     } catch (error) {
       console.error("Error logging out: ", error);
     }
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div className="container">
-          <a className="navbar-brand" href="/">
+      <nav className="navbar">
+        <div className="logo">
+          <Link to="/" className="navbar-brand">
             Stocker<span className="dot">.</span>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              {/* Common Links */}
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/services">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/team">
-                  Team
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/blog">
-                  Blog
-                </a>
-              </li>
-
-              {/* User-specific menu */}
-              {user ? (
-                <>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/adminDashboard">
-                      Profile
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" onClick={handleLogout}>
-                      Logout
-                    </a>
-                  </li>
-                </>
-              ) : (
-                <li className="nav-item">
-                  <a className="nav-link" href="/login">
-                    Login
-                  </a>
-                </li>
-              )}
-            </ul>
-            <a
-              href="/contactus"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              className="btn btn-brand ms-lg-3"
-            >
-              Contact
-            </a>
-          </div>
+          </Link>
         </div>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          <li>
+            <Link to="/" onClick={closeMenu}><b>Home</b></Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={closeMenu}><b>About</b></Link>
+          </li>
+          <li>
+            <Link to="/services" onClick={closeMenu}><b>Services</b></Link>
+          </li>
+          <li>
+            <Link to="/contactUs" className="contact" onClick={closeMenu}>Contact</Link>
+          </li>
+          {user ? (
+            <li>
+              <button onClick={handleLogout} className="btn-logout">
+                Logout
+              </button>
+            </li>
+          ) : (
+            <li onClick={() => navigate("/login")}>
+             
+            </li>
+          )}
+        </ul>
       </nav>
     </div>
   );
