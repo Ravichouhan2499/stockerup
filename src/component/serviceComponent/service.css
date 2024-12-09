@@ -1,0 +1,75 @@
+/* Scoped styles for Service component */
+.service-component .container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-component .intro h6 {
+    color: #ff6e26;
+    font-size: 1.2rem;
+  }
+  
+  .service-component .intro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .service-component .intro p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .service-component .service {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .service-component .service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .service-component .service h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-component .service p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .service-component .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-component .service:nth-child(odd) {
+    background-color: #eef7f6;
+  }
+  
+  .service-component .service:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .service-component .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .service-component .col-lg-4, .service-component .col-md-6 {
+    flex: 0 0 32%;
+    margin-bottom: 20px;
+  }
+  

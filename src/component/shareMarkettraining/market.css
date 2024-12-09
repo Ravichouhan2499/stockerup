@@ -1,0 +1,69 @@
+/* Container for the training component */
+.training-container-1 {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.training-header {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Stage container */
+.training-stage {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+  
+}
+
+/* Stage title */
+.training-stage h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* List styling */
+.training-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Course fee text */
+.training-fee {
+  font-weight: bold;
+  color: #ff6600;
+  margin: 20px 0;
+}
+
+/* Enroll button */
+.enroll-button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.enroll-button:hover {
+  background-color: #e65c00;
+}

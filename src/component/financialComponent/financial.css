@@ -1,0 +1,122 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* Wrapper for the Financial component */
+  .financial-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hero Section */
+  .financial-container .hero {
+    /* background: linear-gradient(to right, #ff8b1e, #00bfff); */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .financial-container .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .financial-container .hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .financial-container .cta-button {
+    background-color:  #ff8b1e;
+    color: white !important;
+    /* padding: 12px 25px; */
+    width: 200px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .financial-container .cta-button:hover {
+    background-color: #ff8b1e;
+  }
+  
+  /* Main Section */
+  .financial-container .main {
+    padding: 20px;
+  }
+  
+  /* Steps Section */
+  .financial-container .steps {
+    background: #eef6ff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .financial-container .steps h2 {
+    margin-bottom: 20px;
+  }
+  
+  .financial-container .steps-list {
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .financial-container .steps-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Principles Section */
+  .financial-container .principles {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .financial-container .principle-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .financial-container .principle-cards p{
+    color: #000;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  
+  .financial-container .card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .financial-container .card h3 {
+    color: #000;
+  }
+  
+  .financial-container .cta-button {
+    color: #1e90ff;
+  }
+
+  .req-btn{
+    width: 400px;
+    margin: auto;
+    display: inline-block;
+  }
+
+  .req-btn-container {
+    text-align: center;
+  }
+
+  .about-section section{
+  padding: 20px
+  }

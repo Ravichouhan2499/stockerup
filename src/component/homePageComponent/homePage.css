@@ -1,0 +1,164 @@
+/* General Body Styles */
+.home-page-body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.home-page-hero {
+    background: linear-gradient(to right, #ff8b1e, #00bfff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home-page-hero-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.home-page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-page-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.home-page-cta-button {
+    background-color: white;
+    color: #ff5500;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.home-page-cta-button:hover {
+    background-color: #ffdfc2;
+}
+
+.home-page-main {
+    padding: 20px;
+}
+
+.home-page-about {
+    padding: 20px;
+    
+}
+
+.home-page-features {
+    background-color: #fff8e7;
+    padding: 40px 20px;
+  
+}
+
+.home-page-feature-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-page-feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-page-feature-card h3 {
+    color: #fa6712;
+}
+
+.home-page-cta {
+    background: #ffe5cc;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .home-page-hero {
+        padding: 40px 20px;
+    }
+
+    .home-page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-page-hero p {
+        font-size: 1rem;
+    }
+
+    .home-page-cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .home-page-about {
+        padding: 20px 10px;
+    }
+
+    .home-page-features {
+        padding: 30px 10px;
+    }
+
+    .home-page-feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-page-feature-card {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .home-page-cta {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .home-page-hero p {
+        font-size: 0.9rem;
+    }
+
+    .home-page-cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .home-page-about {
+        padding: 15px 10px;
+    }
+
+    .home-page-features {
+        padding: 20px 10px;
+    }
+
+    .home-page-feature-cards {
+        gap: 10px;
+    }
+
+    .home-page-feature-card {
+        max-width: 100%;
+    }
+
+    .home-page-cta {
+        padding: 25px;
+    }
+}

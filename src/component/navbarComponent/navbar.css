@@ -114,3 +114,7 @@ body {
 .navbar + div {
   padding-top: 60px;
 }
+
+.tag-line{
+  font-size: 10px;
+}

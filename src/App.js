@@ -16,6 +16,10 @@ import ContactUs from './component/contactComponent/contact'
 import AdminDashboard from './adminComponent/adminDashBoard/adminDashboard'
 import Login from './adminComponent/loginComponent/login'
 import SignUp from './adminComponent/signUpComponent/signUp'
+import ShareMarketTraining from './component/shareMarkettraining/market'
+import Financial from './component/financialComponent/financial'
+import Fess from './component/fessComponent/fess'
+import HomePage from './component/homePageComponent/homePage'
 
 export default function App() {
   return (
@@ -33,8 +37,13 @@ export default function App() {
         <Route path='/team' element={<Team/>}></Route>
         <Route path='/services' element={<Service/>}></Route>
         <Route path='/blog' element={<Blog/>}></Route>
-        <Route path='/contactUs' element={<ContactUs/>}></Route>
-        <Route path='/adminDashboard' element={<AdminDashboard/>}></Route>
+        <Route path='/marketing-training' element={<ShareMarketTraining/>}></Route>
+        <Route path='/financial-advising' element={<Financial/>}></Route>
+        <Route path='/pricing' element={<Fess/>}></Route>
+        <Route path='/home-pages' element={<HomePage/>}></Route>
+
+        <Route path='/contact-us' element={<ContactUs/>}></Route>
+        <Route path='/admin-dashboard' element={<AdminDashboard/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signUp' element={<SignUp/>}></Route>
 

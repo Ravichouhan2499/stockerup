@@ -45,7 +45,8 @@ export default function NavbarComponent() {
       <nav className="navbar">
         <div className="logo">
           <Link to="/" className="navbar-brand">
-            Stocker<span className="dot">.</span>
+          SuloWise Capital<span className="dot">.</span>
+         {/* <div className="tag-line">Light your path to financial growth</div> */}
           </Link>
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
@@ -54,17 +55,23 @@ export default function NavbarComponent() {
           <span className="bar"></span>
         </div>
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          {/* <li>
+            <Link to="/homePages" onClick={closeMenu}><b>Home</b></Link>
+          </li> */}
           <li>
-            <Link to="/" onClick={closeMenu}><b>Home</b></Link>
+            <Link to="/marketing-training" onClick={closeMenu}><b>Market Training</b></Link>
           </li>
           <li>
-            <Link to="/about" onClick={closeMenu}><b>About</b></Link>
+            <Link to="/financial-advising" onClick={closeMenu}><b>Personal Financial Advicing</b></Link>
           </li>
           <li>
+            <Link to="/pricing" onClick={closeMenu}><b>Pricing</b></Link>
+          </li>
+          {/* <li>
             <Link to="/services" onClick={closeMenu}><b>Services</b></Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="/contactUs" className="contact" onClick={closeMenu}>Contact</Link>
+            <Link to="/contact-us" className="contact" onClick={closeMenu}>Contact Us</Link>
           </li>
           {user ? (
             <li>
