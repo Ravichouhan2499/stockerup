@@ -119,3 +119,10 @@
 .submit-btn:hover {
   background-color: #0056b3;
 }
+
+.profile-image {
+  width: 180px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5%; /* Makes the image circular */
+  margin-bottom: 15px; /* Adds spacing below the image */
+}

@@ -20,6 +20,8 @@ import ShareMarketTraining from './component/shareMarkettraining/market'
 import Financial from './component/financialComponent/financial'
 import Fess from './component/fessComponent/fess'
 import HomePage from './component/homePageComponent/homePage'
+import Privacy from './component/privacyComponent/privacy'
+import Refundpolicy from './component/refundpolicy/refundpolicy'
 
 export default function App() {
   return (
@@ -31,7 +33,7 @@ export default function App() {
 
       <NavbarComponent/>
       <Routes>
-        <Route path='/terms' element={<Terms/>} > </Route>
+        <Route path='/terms-&-conditions' element={<Terms/>} > </Route>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/team' element={<Team/>}></Route>
@@ -41,6 +43,8 @@ export default function App() {
         <Route path='/financial-advising' element={<Financial/>}></Route>
         <Route path='/pricing' element={<Fess/>}></Route>
         <Route path='/home-pages' element={<HomePage/>}></Route>
+        <Route path='/privacy-policy' element={<Privacy/>}></Route>
+        <Route path='/refund-policy' element={<Refundpolicy/>}></Route>
 
         <Route path='/contact-us' element={<ContactUs/>}></Route>
         <Route path='/admin-dashboard' element={<AdminDashboard/>}></Route>

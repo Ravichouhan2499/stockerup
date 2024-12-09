@@ -14,7 +14,7 @@ body {
   /* Hero Section */
   .financial-container .hero {
     /* background: linear-gradient(to right, #ff8b1e, #00bfff); */
-    color: white;
+    color: rgb(22, 17, 17);
     text-align: center;
     padding: 40px 20px;
   }

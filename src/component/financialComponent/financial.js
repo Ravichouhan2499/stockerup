@@ -64,9 +64,9 @@ export default function Financial() {
         <ul className="steps-list">
       
           <li>Spend 10 minutes discussing your goals with an advisor.</li>
-          <li>Make a yearly payment of Rs. 9500 and share payment details.</li>
+          <li>Make a yearly payment of INR 9500 and share payment details.</li>
           <li>
-            We will assess your personal finance and connect with you via
+            We will assess your pINRnal finance and connect with you via
             voice/video call.
           </li>
           <li>

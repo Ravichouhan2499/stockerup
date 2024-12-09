@@ -1,0 +1,72 @@
+/* Container for the Refund Policy */
+.refund-policy-container {
+    max-width: 1120px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title Styling */
+  .refund-policy-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Description Paragraph Styling */
+  .refund-policy-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Ordered List Styling */
+  .refund-policy-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+  }
+  
+  .refund-policy-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Highlighted Text Styling */
+  .highlight-text {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Styling for any important text or bolded items */
+  .refund-policy-list b {
+    color: #222;
+  }
+  
+  /* Responsive Design - Ensure it looks good on smaller screens */
+  @media screen and (max-width: 600px) {
+    .refund-policy-container {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    .refund-policy-title {
+      font-size: 1.8rem;
+    }
+  
+    .refund-policy-description {
+      font-size: 0.95rem;
+    }
+  
+    .refund-policy-list {
+      font-size: 0.95rem;
+    }
+  }
+  

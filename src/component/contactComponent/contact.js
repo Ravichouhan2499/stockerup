@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.css";
 import { Link } from "react-router-dom";
+import img from '../../image/{CAEC9C11-6C53-4817-A984-AEB76D40A402}.png'
 
 export default function ContactUs() {
   return (
@@ -9,6 +10,9 @@ export default function ContactUs() {
     {/* Left Column */}
     <div className="left-column">
       <h2 className="section-title">Contact Us</h2>
+      <img src={img}
+      className="profile-image" 
+      />
       <p>
      <h3> Surya Prakash Tiwari</h3> 
 (CPFA, MBA-Finance, 12 year of Share trading
@@ -28,19 +32,19 @@ Experience, Dealt over 1600 clients as on date)
             type="text"
             id="name"
             name="name"
-            placeholder="Your Name"
+            placeholder="Your name"
             required
           />
         </div>
 
         {/* Email Field */}
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">email</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your email"
             required
           />
         </div>
@@ -52,7 +56,7 @@ Experience, Dealt over 1600 clients as on date)
             id="message"
             name="message"
             rows="4"
-            placeholder="Your Message"
+            placeholder="Your message"
             required
           ></textarea>
         </div>

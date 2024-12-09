@@ -24,7 +24,7 @@ const StockMarketTraining = () => {
           <li>Market research tools and resources</li>
         </ul>
         <p className="training-fee">
-          Course Fee: Rs 4000 (Online) | Rs 5500 + Hall Charge (Offline)
+          Course Fee: INR 4000 (Online) | INR 5500 + Hall Charge (Offline)
         </p>
         <Link to="/contact-us">
             <button className="stock-training-button">Enroll Now</button>
@@ -41,7 +41,7 @@ const StockMarketTraining = () => {
             <li>Fixed Income Strategies (Weekly, Monthly, Quarterly)</li>
             <li>Live Trading Exposure (6 months)</li>
           </ul>
-          <p className="training-fee">Course Fee: Rs 35000 (Online)</p>
+          <p className="training-fee">Course Fee: INR 35000 (Online)</p>
           <Link to="/contact-us">
             <button className="stock-training-button">Enroll Now</button>
           </Link>

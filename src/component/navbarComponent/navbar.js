@@ -67,9 +67,9 @@ export default function NavbarComponent() {
           <li>
             <Link to="/pricing" onClick={closeMenu}><b>Pricing</b></Link>
           </li>
-          {/* <li>
-            <Link to="/services" onClick={closeMenu}><b>Services</b></Link>
-          </li> */}
+          <li>
+            <Link to="/refund-policy" onClick={closeMenu}><b>Refund Policy</b></Link>
+          </li>
           <li>
             <Link to="/contact-us" className="contact" onClick={closeMenu}>Contact Us</Link>
           </li>
