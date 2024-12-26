@@ -20,7 +20,10 @@ Experience, Dealt over 1600 clients as on date)
  <br/>
  <p><b>email:</b><Link style={{ textDecoration: 'none' }} to='mailto:cpfasurya2@gmail.com'>&nbsp; &nbsp;cpfasurya2@gmail.com</Link> </p>
       </p>
-    </div>
+      <p><b>Contact:</b><Link style={{ textDecoration: 'none' }} to='tel:9911558257'>&nbsp; &nbsp;9911558257</Link> </p>
+      
+     
+     </div>
 
     {/* Right Column */}
     <div className="right-column">

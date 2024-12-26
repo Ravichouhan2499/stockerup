@@ -14,7 +14,7 @@ export default function HomePage() {
         </div>
       </header> */}
 <br/>
-  <h1>Light your path to financial growth</h1>
+  <h1 className="text-center">Light your path to financial growth</h1>
 
 
       <main className="home-page-main">

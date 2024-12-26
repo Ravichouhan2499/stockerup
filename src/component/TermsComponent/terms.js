@@ -103,31 +103,3 @@ export default function Terms() {
   </div>
   )
 }
-
-
-// General
-// This page provides the terms and conditions for use of the www.sptiwari.in / www.workshop.sptiwari.inoperated by legal entity ‘Mansun Consultancy Private Limited’ - website and pages accessible there from, herein after referred to as the “Site” and the services contained within. By using the Site or downloading information from the Site, the user (You) agree to the terms and conditions listed here. This Agreement applies to users(s) if users(s) are visitors, registered- free or paid user(s) who access the website for any purpose.
-
-// It also applies to any legal entity which may be represented by you.
-
-// Account Deletion
-
-// When you delete your account you will receive a confirmation email stating that your account has been deleted. Once you delete your account, it is not possible to get it back. We do not offer refunds, even if the account has been deleted.
-
-// Disclaimer
-// Dispute Resolution and Jurisdiction
-
-// In the event that the Parties are unable to amicably resolve a dispute by mediation, said dispute will be referred to arbitration by a sole arbitrator to be appointed by the Mansun Consultancy Pvt Ltd, and the award passed by such sole arbitrator will be valid and binding on both Parties. The Parties shall bear their own costs for the proceedings, although the sole arbitrator may, in his/her sole discretion, direct either Party to bear the entire cost of the proceedings. The arbitration shall be conducted in English, and the seat of Arbitration shall be in Chennai, India.
-
-// The Parties expressly agree that the Terms, Policy and any other agreements entered into between the Parties are governed by the laws, rules, and regulations of India, and that the Courts at Chennai, India, shall have exclusive jurisdiction over any disputes arising between the Parties.
-
-// GRIEVANCE OFFICER
-
-// In accordance with Information Technology Act 2000 and rules made thereunder, the name and contact details of the Grievance Officer are provided below:
-
-// Anuja Johnson
-
-// anuja@mansunconsultancy.com
-
-// Thank you for using our Services. We hope you find the services helpful, informative, and convenient to use. If you have any questions regarding these Terms and Conditions, please contact us by email at support@mansunconsultancy.com
-

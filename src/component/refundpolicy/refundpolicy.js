@@ -10,7 +10,7 @@ export default function Refundpolicy() {
     </p>
     <ol className="refund-policy-list">
       <li>
-        Cancellations will only be considered if the request is made <b>1 day</b> of placing the order.
+        Cancellations will only be considered if the request is made <b>10 day</b> of placing the order.
       </li>
       <li>
         <b>SURYA PRAKASH TIWARI</b> does not accept cancellation requests after completion of the workshop. However, the refund can be made if the user establishes that the quality of the services (workshop) delivered is not good.
