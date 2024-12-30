@@ -5,7 +5,6 @@ import Footer from './component/footerComponent/footer'
 import { Route, Routes } from 'react-router-dom'
 import Terms from './component/TermsComponent/terms'
 import Home from './pages/homePages/home'
-import Team from './component/teamComponent/team'
 import Blog from './component/blogComponent/blog'
 import ContactUs from './component/contactComponent/contact'
 import AdminDashboard from './adminComponent/adminDashBoard/adminDashboard'
@@ -30,7 +29,6 @@ export default function App() {
         <Route path='/terms-&-conditions' element={<Terms/>} > </Route>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
-        <Route path='/team' element={<Team/>}></Route>
         <Route path='/blog' element={<Blog/>}></Route>
         <Route path='/marketing-training' element={<ShareMarketTraining/>}></Route>
         <Route path='/financial-advising' element={<Financial/>}></Route>
