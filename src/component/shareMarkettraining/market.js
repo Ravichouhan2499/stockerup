@@ -25,10 +25,24 @@ const StockMarketTraining = () => {
         </ul>
         <p className="training-fee">
           Course Fee: INR 4000 (Online) | INR 5500 + Hall Charge (Offline)
-        </p>
-        <Link to="/contact-us">
-            <button className="stock-training-button">Enroll Now</button>
-          </Link>      </div>
+        </p> 
+   
+        <div className="req-btn-container">
+          <div className='req-btn-container'>
+                 <Link to="https://phon.pe/ttguox0n" > <button className="button req-btn">Pay Now</button></Link>  
+                 </div> 
+       </div>
+       
+       <div className="text-center">
+         <b>OR</b>
+       </div>
+       
+       <div className="req-btn-container">
+         <Link to="/contact-us">
+           <button className="button req-btn">Request an Appointment</button>
+         </Link>
+       </div>
+        </div>
 
          <br/>
       <div className="training-stage">

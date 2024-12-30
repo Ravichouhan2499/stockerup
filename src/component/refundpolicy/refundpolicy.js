@@ -7,7 +7,7 @@ export default function Refundpolicy() {
     <div className="refund-policy-container">
     <h1 className="refund-policy-title">Refund and Cancellation Policy</h1>
     <p className="refund-policy-description">
-    Once we receive your refund request, it will be reviewed, and the refund will be credited to the original payment method within 7 business days if approved    </p>
+       </p>
     <b>Refund Eligibility</b>
     <ol className="refund-policy-list">
       <li>

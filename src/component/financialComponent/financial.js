@@ -66,7 +66,7 @@ export default function Financial() {
           <li>Spend 10 minutes discussing your goals with an advisor.</li>
           <li>Make a yearly payment of INR 9500 and share payment details.</li>
           <li>
-            We will assess your pINRnal finance and connect with you via
+            We will assess your personal finance and connect with you via
             voice/video call.
           </li>
           <li>
@@ -77,9 +77,22 @@ export default function Financial() {
             Ongoing reminders and guidance throughout the tenure of your plan.
           </li>
         </ul>
-        <div className='req-btn-container'>
-        <Link to="/contact-us" > <button className="button req-btn">Request a Appointment</button></Link>  
-        </div> 
+        <div className="req-btn-container">
+  <div className='req-btn-container'>
+         <Link to="https://phon.pe/am7awuzw" > <button className="button req-btn">Pay Now</button></Link>  
+         </div> 
+</div>
+
+<div className="text-center">
+  <b>OR</b>
+</div>
+
+<div className="req-btn-container">
+  <Link to="/contact-us">
+    <button className="button req-btn">Request an Appointment</button>
+  </Link>
+</div>
+
            </section>
     </main>
   </div>
