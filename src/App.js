@@ -23,7 +23,6 @@ export default function App() {
     
     <div>
 
-
       <NavbarComponent/>
       <Routes>
         <Route path='/terms-&-conditions' element={<Terms/>} > </Route>

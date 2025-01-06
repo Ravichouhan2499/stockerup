@@ -12,10 +12,10 @@ export default function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_7ty05rk", // Replace with your EmailJS Service ID
-        "template_zmozbsl", // Replace with your EmailJS Template ID
+        "service_t7eien7", // Replace with your EmailJS Service ID
+        "template_73gvg2d", // Replace with your EmailJS Template ID
         formRef.current,
-        "_ybywiWeaDGGYODeo" // Replace with your EmailJS Public Key
+        "iJtPHOfXwSISWDDPa" // Replace with your EmailJS Public Key
       )
       .then(
         (result) => {
